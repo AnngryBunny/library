@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script src="js/script.js" defer></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <header>
+      <!--Navbar-->
+      <div class="container">
+        <nav class="navbar">
+          <h1 class="logo">Brooklyn Public Library</h1>
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#about">About</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#favorites">Favorites</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#coffee-shop">Coffee Shop</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#contacts">Contacts</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#library-card">Library Card</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="profile">
+          <a class="profile__link" href="#profile"
+            ><svg class="profile__icon">
+              <use xlink:href="images/sprite.svg#icon_profile"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!--End of navbar-->
+    </header>
+
+    <main>
+      <!--Section Welcome-->
+      <section class="welcome">
+        <div class="container">
+          <h2 class="welcome__header">Welcome<br />to the Brooklyn Library</h2>
+          <img
+            class="welcome__img"
+            src="images/welcome-bg.png"
+            alt="black-rectangle"
+          />
+        </div>
+      </section>
+      <!--End of section Welcome-->
+
+      <!--Section About-->
+      <section class="about">
+        <div class="container">
+          <h2 class="section-header">About</h2>
+          <p class="about__title">
+            The Brooklyn Library is a free workspace, a large number of books
+            and a cozy coffee shop inside
+          </p>
+          <!--Slider-->
+          <div class="slider">
+            <div class="slider__img-container">
+              <img
+                class="slider__img"
+                src="images/image_1.png"
+                alt="library image"
+              />
+              <img
+                class="slider__img"
+                src="images/image_2.png"
+                alt="library image"
+              />
+              <img
+                class="slider__img"
+                src="images/image_3.png"
+                alt="library image"
+              />
+            </div>
+            <div class="slider__pagination">
+              <div class="slider__btn">
+                <span class="slider__radio-btn active"></span>
+              </div>
+              <div class="slider__btn">
+                <span class="slider__radio-btn"></span>
+              </div>
+              <div class="slider__btn">
+                <span class="slider__radio-btn"></span>
+              </div>
+            </div>
+          </div>
+          <!--End of slider-->
+        </div>
+      </section>
+      <!--End of the section About-->
+
+      <!--Section Favorites-->
+      <section class="favorites">
+        <div class="container">
+          <h2 class="section-header">Favorites</h2>
+          <p class="section-semi-header">Pick favorites of season</p>
+          <div class="seasons">
+            <input
+              id="seasons__radio-btn-1"
+              class="seasons__radio-btn"
+              type="radio"
+              name="switch"
+              checked
+            />
+            <label
+              id="seasons__radio-btn-1--label"
+              class="seasons__radio-btn--label"
+              for="seasons__radio-btn-1"
+              >Winter</label
+            >
+
+            <input
+              id="seasons__radio-btn-2"
+              class="seasons__radio-btn"
+              type="radio"
+              name="switch"
+            /><label
+              id="seasons__radio-btn-2--label"
+              class="seasons__radio-btn--label"
+              for="seasons__radio-btn-2"
+              >Spring</label
+            >
+
+            <input
+              id="seasons__radio-btn-3"
+              class="seasons__radio-btn"
+              type="radio"
+              name="switch"
+            />
+            <label
+              id="seasons__radio-btn-3--label"
+              class="seasons__radio-btn--label"
+              for="seasons__radio-btn-3"
+              >Summer</label
+            >
+
+            <input
+              id="seasons__radio-btn-4"
+              class="seasons__radio-btn"
+              type="radio"
+              name="switch"
+            />
+            <label
+              id="seasons__radio-btn-4--label"
+              class="seasons__radio-btn--label"
+              for="seasons__radio-btn-4"
+              >Autumn</label
+            >
+          </div>
+
+          <div class="season-favorites">
+            <div class="season-favorites__item">
+              <div class="season-favorites__book-image">
+                <img src="images/book_13.png" alt="book image" />
+              </div>
+              <p class="season-favorites__semi-header">Staff Picks</p>
+              <p class="season-favorites__book-name">The Book Eaters</p>
+              <p class="season-favorites__book-author">By Sunyi Dean</p>
+              <p class="season-favorites__book-about">
+                An unusual sci-fi story about a book eater woman who tries
+                desperately to save her dangerous mind-eater son from tradition
+                and certain death. Complete with dysfunctional family values,
+                light Sapphic romance, and a strong, complex protagonist. Not
+                for the faint of heart.
+              </p>
+              <button class="season-favorites__btn">Buy</button>
+            </div>
+
+            <div class="season-favorites__item">
+              <div class="season-favorites__book-image">
+                <img src="images/book_14.png" alt="book image" />
+              </div>
+              <p class="season-favorites__semi-header">Staff Picks</p>
+              <p class="season-favorites__book-name">Cackle</p>
+              <p class="season-favorites__book-author">By Rachel Harrison</p>
+              <p class="season-favorites__book-about">
+                Are your Halloween movies of choice The Witches of Eastwick and
+                Practical Magic? Look no further than here - where a woman
+                recovering from a breakup moves to a quaint town in upstate New
+                York and befriends a beautiful witch.
+              </p>
+              <button class="season-favorites__btn">Buy</button>
+            </div>
+
+            <div class="season-favorites__item">
+              <div class="season-favorites__book-image">
+                <img src="images/book_15.png" alt="book image" />
+              </div>
+              <p class="season-favorites__semi-header">Staff Picks</p>
+              <p class="season-favorites__book-name">
+                Dante: Poet of the Secular World
+              </p>
+              <p class="season-favorites__book-author">By Erich Auerbach</p>
+              <p class="season-favorites__book-about">
+                Auerbach's engaging book places the 'Comedy' within the
+                tradition of epic, tragedy, and philosophy in general, arguing
+                for Dante's uniqueness as one who raised the individual and his
+                drama of soul into something of divine significance—an inspired
+                introduction to Dante's main themes.
+              </p>
+              <button class="season-favorites__btn">Buy</button>
+            </div>
+
+            <div class="season-favorites__item">
+              <div class="season-favorites__book-image">
+                <img src="images/book_16.png" alt="book image" />
+              </div>
+              <p class="season-favorites__semi-header">Staff Picks</p>
+              <p class="season-favorites__book-name">The Last Queen</p>
+              <p class="season-favorites__book-author">By Clive Irving</p>
+              <p class="season-favorites__book-about">
+                A timely and revelatory new biography of Queen Elizabeth (and
+                her family) exploring how the Windsors have evolved and thrived
+                as the modern world has changed around them.
+              </p>
+              <button class="season-favorites__btn">Buy</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End of the section Favorites-->
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

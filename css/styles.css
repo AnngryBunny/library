@@ -1,0 +1,378 @@
+@font-face {
+  font-family: "Forum";
+  src: url("../fonts/Forum-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf");
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*General*/
+.container {
+  width: 90rem;
+}
+
+.section-header {
+  font-family: "Forum";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: capitalize;
+
+  color: #0c0c0e;
+}
+
+.section-header::after {
+  width: 3.125rem;
+  height: 0.0625rem;
+  display: block;
+  margin: auto;
+  margin-top: 1.25rem;
+
+  background: #0c0c0e;
+  content: "";
+}
+
+/*Header*/
+
+header {
+  position: relative;
+
+  height: 5.6rem;
+
+  background-color: #0c0c0e;
+}
+
+/*Navbar*/
+
+.logo {
+  position: absolute;
+
+  margin: 1.25rem 28.38rem 1.25rem 1.25rem;
+
+  color: #fff;
+  font-family: "Forum", serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.125rem;
+  letter-spacing: 0.0375rem;
+}
+
+.navbar__list {
+  position: absolute;
+
+  margin-top: 1.25rem;
+  margin-left: 48rem;
+}
+
+.navbar__item {
+  display: inline;
+
+  margin-right: 1.6rem;
+}
+
+.navbar__link {
+  font-family: "Inter", serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.125rem;
+
+  color: #fff;
+
+  text-decoration: none;
+}
+
+.profile {
+  position: relative;
+
+  display: inline;
+}
+
+.profile__icon {
+  position: absolute;
+
+  width: 1.75rem;
+  height: 1.75rem;
+
+  margin: 1.94rem;
+  margin-left: 87rem;
+
+  fill: #fff;
+}
+
+/*Sectoion Welcome*/
+
+.welcome {
+  position: relative;
+
+  height: 37.5rem;
+
+  background-image: url("../images/welcome.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome__img {
+  margin: 13.75rem 52.5rem 12rem 0rem;
+}
+
+.welcome__header {
+  position: absolute;
+
+  width: 37.5rem;
+  margin-top: 13.75rem;
+  padding: 2.1875rem 2.5rem;
+
+  text-align: center;
+  font-family: "Forum", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3.125rem;
+  letter-spacing: 0.1875rem;
+  text-transform: uppercase;
+
+  color: #fff;
+}
+
+/*Section About*/
+
+.about__title {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+
+  color: #000;
+}
+
+.about .section-header {
+  margin: 1.25rem 41.69rem 2.5rem;
+}
+
+/*Slider*/
+
+.slider__img-container {
+  margin: 1.25rem;
+}
+
+.slider__img {
+  margin-right: 1.31rem;
+  width: 28.125rem;
+  height: 35rem;
+}
+
+.slider__img:last-child {
+  margin-right: 0rem;
+}
+
+.slider__pagination {
+  margin: 2.3rem 42.88rem 0rem;
+}
+
+.slider__btn {
+  display: inline;
+  margin-right: 0.625rem;
+
+  width: 1.625rem;
+  height: 1.625rem;
+}
+
+.slider__pagination:last-child {
+  margin-right: 0rem;
+}
+
+.slider__radio-btn {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+
+  border-radius: 50%;
+
+  background-color: #0c0c0e;
+}
+
+.active {
+  background-color: #bb945f;
+}
+
+/*Section Favorites*/
+
+.favorites .section-header {
+  margin: 3.5rem 40rem 0rem;
+}
+
+.section-semi-header {
+  margin-left: 1.25rem;
+  margin-right: 74.12rem;
+  margin-top: 2.5rem;
+
+  text-align: center;
+  font-family: "Inter";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  color: #000;
+}
+
+.seasons {
+  margin-top: 2.6rem;
+  margin-bottom: 2.5rem;
+  margin-left: 1.25rem;
+}
+
+.seasons__radio-btn {
+  margin-right: 1rem;
+  width: 1.0625rem;
+  height: 1.0625rem;
+
+  accent-color: #232323;
+}
+
+.seasons__radio-btn--label {
+  margin-right: 5.5rem;
+
+  font-family: "Inter";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  color: #000;
+}
+
+#seasons__radio-btn-1--label {
+  font-family: "Inter";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  color: #000;
+}
+
+.season-favorites__item {
+  position: relative;
+
+  display: inline-block;
+  margin-left: 1.25rem;
+  width: 34.375rem;
+  height: 34.6875rem;
+
+  border: 0.0625px solid #000;
+  background: #fff;
+}
+
+.season-favorites__item:nth-of-type(odd) {
+  margin-right: 15rem;
+}
+
+.season-favorites__semi-header {
+  margin: 0.94rem 1.25rem 1.25rem;
+
+  font-family: "Forum";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: capitalize;
+
+  color: #000;
+}
+
+.season-favorites__semi-header::after {
+  width: 3.75rem;
+  height: 0.0625rem;
+  display: block;
+
+  background: #bb945f;
+  content: "";
+}
+
+.season-favorites__book-name {
+  margin-left: 1.25rem;
+
+  font-family: "Inter";
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.season-favorites__book-author {
+  margin-left: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  font-family: "Inter";
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: capitalize;
+
+  color: #000;
+}
+
+.season-favorites__book-about {
+  margin: 0rem 10.94rem 0.65rem 1.25rem;
+
+  font-family: "Inter";
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: capitalize;
+
+  color: #000;
+}
+
+.season-favorites__btn {
+  width: 4.6875rem;
+  height: 1.875rem;
+  padding: 0.56rem 1.69rem;
+  margin-left: 1.25rem;
+  margin-bottom: 0.94rem;
+
+  text-align: center;
+  font-family: "Inter";
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0625rem;
+
+  color: #0c0c0e;
+  border-radius: 0.125rem;
+  border: 0.0625px solid #0c0c0e;
+  background-color: #fff;
+}
+
+.season-favorites__book-image {
+  position: absolute;
+
+  width: 12.5rem;
+  height: 18.75rem;
+  margin-top: 15.94rem;
+  margin-left: 24.38rem;
+}
