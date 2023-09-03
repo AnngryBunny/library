@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images" />
     <link
       rel="icon"
       type="image/png"
@@ -17,7 +17,7 @@
     <title>Library</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <!--Navbar-->
       <div class="container">
         <nav class="navbar">
@@ -33,10 +33,12 @@
               <a class="navbar__link" href="#coffee-shop">Coffee Shop</a>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#contacts">Contacts</a>
+              <a class="navbar__link" href="#our-contacts">Contacts</a>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#library-card">Library Card</a>
+              <a class="navbar__link" href="#digital-library-cards"
+                >Library Card</a
+              >
             </li>
           </ul>
         </nav>
@@ -51,9 +53,9 @@
       <!--End of navbar-->
     </header>
 
-    <main>
+    <main class="main">
       <!--Section Welcome-->
-      <section class="welcome">
+      <section class="welcome" id="welcome">
         <div class="container">
           <h2 class="welcome__header">Welcome<br />to the Brooklyn Library</h2>
           <img
@@ -66,7 +68,7 @@
       <!--End of section Welcome-->
 
       <!--Section About-->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <h2 class="section-header">About</h2>
           <p class="about__title">
@@ -93,15 +95,9 @@
               />
             </div>
             <div class="slider__pagination">
-              <div class="slider__btn">
-                <span class="slider__radio-btn active"></span>
-              </div>
-              <div class="slider__btn">
-                <span class="slider__radio-btn"></span>
-              </div>
-              <div class="slider__btn">
-                <span class="slider__radio-btn"></span>
-              </div>
+              <span class="slider__radio-btn slider__radio-btn-active"></span>
+              <span class="slider__radio-btn"></span>
+              <span class="slider__radio-btn"></span>
             </div>
           </div>
           <!--End of slider-->
@@ -110,7 +106,7 @@
       <!--End of the section About-->
 
       <!--Section Favorites-->
-      <section class="favorites">
+      <section class="favorites" id="favorites">
         <div class="container">
           <h2 class="section-header">Favorites</h2>
           <p class="section-semi-header">Pick favorites of season</p>
@@ -134,7 +130,8 @@
               class="seasons__radio-btn"
               type="radio"
               name="switch"
-            /><label
+            />
+            <label
               id="seasons__radio-btn-2--label"
               class="seasons__radio-btn--label"
               for="seasons__radio-btn-2"
@@ -233,14 +230,303 @@
                 her family) exploring how the Windsors have evolved and thrived
                 as the modern world has changed around them.
               </p>
-              <button class="season-favorites__btn">Buy</button>
+              <button disabled class="season-favorites__btn">Own</button>
             </div>
           </div>
         </div>
       </section>
       <!--End of the section Favorites-->
+
+      <!--Section Coffee Shop-->
+      <section class="coffee-shop" id="coffee-shop">
+        <div class="container">
+          <h2 class="section-header">Coffee Shop</h2>
+          <p class="coffee-shop__about">
+            In our library, we have of cozy coffee shop, welcoming in customers
+            with frothy cappuccinos and friendly conversation. <br />
+          </p>
+          <p class="coffee-shop__about-2">
+            You can get a favorite book and read in coffee shop. Our barista to
+            cook you best coffee, and also you can try desserts <br />
+            from bakery.
+          </p>
+
+          <div class="coffee-shop__menu-lists">
+            <div class="coffee-shop__menu-list coffee-shop__menu-left">
+              <h3 class="coffee-shop__menu-header">Coffee & Tea</h3>
+              <ul class="coffee-shop__menu">
+                <li class="coffee-shop__item">
+                  <span class="coffee-shop__product">Cold Brew Coffee</span>
+                  <span class="coffee-shop__price">$3</span>
+                </li>
+                <li class="coffee-shop__item">
+                  <span class="coffee-shop__product">French Press Pot</span
+                  ><span class="coffee-shop__price">$5</span>
+                </li>
+                <li class="coffee-shop__item">
+                  <span class="coffee-shop__product">Espresso</span
+                  ><span class="coffee-shop__price">$2</span>
+                </li>
+                <li class="coffee-shop__item">
+                  <span class="coffee-shop__product">Cappuccino</span
+                  ><span class="coffee-shop__price">$4</span>
+                </li>
+                <li class="coffee-shop__item">
+                  <span class="coffee-shop__product">Hot tea</span
+                  ><span class="coffee-shop__price">$2</span>
+                </li>
+                <li class="coffee-shop__item">
+                  <span class="coffee-shop__product">Cold tea</span
+                  ><span class="coffee-shop__price">$2</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="coffee-shop__menu-list coffee-shop__menu-right">
+              <h3 class="coffee-shop__menu-header">Desserts & Cakes</h3>
+              <ul class="coffee-shop__menu">
+                <li class="coffee-shop__item">
+                  <span class="coffee-shop__product">Forest Gateau</span>
+                  <span class="coffee-shop__price">$16</span>
+                </li>
+                <li class="coffee-shop__item">
+                  <span class="coffee-shop__product">Blue Moon</span
+                  ><span class="coffee-shop__price"> $16</span>
+                </li>
+                <li class="coffee-shop__item">
+                  <span class="coffee-shop__product">Truffle Cake</span
+                  ><span class="coffee-shop__price"> $15</span>
+                </li>
+                <li class="coffee-shop__item">
+                  <span class="coffee-shop__product">Chocolate Cake</span
+                  ><span class="coffee-shop__price"> $18</span>
+                </li>
+                <li class="coffee-shop__item">
+                  <span class="coffee-shop__product">Poet`s Dream Cake</span
+                  ><span class="coffee-shop__price"> $16</span>
+                </li>
+                <li class="coffee-shop__item">
+                  <span class="coffee-shop__product">Pineapple Cake</span
+                  ><span class="coffee-shop__price"> $14</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End of the section Coffee Shop-->
+
+      <!--Section Our Contacts-->
+      <section class="our-contacts" id="our-contacts">
+        <div class="container">
+          <h2 class="section-header">Our Contacts</h2>
+          <div class="our-contacts__contacts-map">
+            <div class="our-contacts__contacts">
+              <p class="our-contacts__info our-contacts__semi-header">
+                <span class="bold">For All Library Inquiries:</span>
+              </p>
+              <p class="our-contacts__info">
+                Please call
+                <a class="our-contacts__tel" href="tel:+6177302370"
+                  >(617) 730-2370</a
+                >
+              </p>
+              <p class="our-contacts__info">
+                For TTY service, please call
+                <a class="our-contacts__tel" href="tel:+6177302370"
+                  >(617) 730-2370</a
+                >
+              </p>
+              <p class="our-contacts__info">
+                Putterham Library:
+                <a class="our-contacts__tel" href="tel:+6177302385"
+                  >(617) 730-2385</a
+                >
+              </p>
+              <div class="our-contacts__senior-staff">
+                <p class="our-contacts__info our-contacts__semi-header">
+                  <span class="bold">Senior Staff</span>
+                </p>
+                <p class="our-contacts__info">
+                  Library Director:
+                  <a
+                    class="our-contacts__mail"
+                    href="mailto:amanda_hirst@gmail.com"
+                    >Amanda Hirst</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="our-contacts__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.0159803912125!2d-73.99616851475093!3d40.69564569764296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a49b649b8c3%3A0x6342a2291cea2e!2zMjg2IENhZG1hbiBQbGF6YSBXLCBCcm9va2x5biwgTlkgMTEyMDEsINCh0KjQkA!5e0!3m2!1sru!2sua!4v1690212575562!5m2!1sru!2sua"
+                width="690"
+                height="414"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End of the section Our Contacts-->
+
+      <!--Section Digital Library Cards-->
+      <section class="digital-library-cards" id="digital-library-cards">
+        <div class="container">
+          <h2 class="section-header">Digital Library Cards</h2>
+          <div class="digital-library-cards__content">
+            <div class="digital-library-cards__find-card-form">
+              <h3 class="digital-library-cards__semi-header">
+                Find your Library card
+              </h3>
+              <!--Start of Digital Library Cards Form-->
+              <form class="digital-library-cards__form">
+                <fieldset class="digital-library-cards__form-fieldset">
+                  <legend></legend>
+                  <div class="digital-library-cards__form-search-inputs">
+                    <h3 class="digital-library-cards__form-header">
+                      Brooklyn Public Library
+                    </h3>
+                    <input
+                      id="digital-library-cards__input-name"
+                      class="digital-library-cards__input"
+                      type="text"
+                      name="name"
+                      placeholder="Reader's name"
+                    />
+                    <input
+                      id="digital-library-cards__input-number"
+                      class="digital-library-cards__input"
+                      type="text"
+                      name="number"
+                      placeholder="Card number"
+                    />
+                  </div>
+                  <button
+                    id="digital-library-cards__input-submit"
+                    class="digital-library-cards__input-submit"
+                  >
+                    Check the card
+                  </button>
+                </fieldset>
+              </form>
+              <!--End of Digital Library Cards Form-->
+            </div>
+
+            <div class="digital-library-cards__reader-card">
+              <h3 class="digital-library-cards__semi-header forum">
+                Get a reader card
+              </h3>
+              <p class="digital-library-cards__reader-card-about">
+                You will be able to see a reader card after logging into account
+                or you can register a new account
+              </p>
+
+              <div class="digital-library-cards__sign-log-btns">
+                <button
+                  id="digital-library-cards__sign-up-btn"
+                  class="digital-library-cards__sign-log-btn"
+                >
+                  Sign Up
+                </button>
+                <button
+                  id="digital-library-cards__log-in-btn"
+                  class="digital-library-cards__sign-log-btn"
+                >
+                  Log In
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End of the Digital Library Cards-->
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__social-networks-schedule">
+          <div class="footer__adress-social-networks">
+            <p class="footer__adress">
+              <a
+                class="footer__adress-link"
+                href="https://www.bklynlibrary.org/locations/brooklyn-heights"
+                >286 Cadman Plaza, New York, NY 11238, United States</a
+              >
+            </p>
+
+            <ul class="footer__social-networks">
+              <li class="footer__social-networks-item">
+                <a
+                  class="footer__social-networks-link"
+                  href="https://twitter.com/i/flow/login"
+                  ><svg class="footer__social-networks-icon">
+                    <use xlink:href="images/sprite.svg#icon_twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer__social-networks-item">
+                <a
+                  class="footer__social-networks-link"
+                  href="https://www.instagram.com/accounts/login/"
+                  ><svg class="footer__social-networks-icon">
+                    <use xlink:href="images/sprite.svg#icon_instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer__social-networks-item">
+                <a
+                  class="footer__social-networks-link"
+                  href="https://uk-ua.facebook.com/"
+                  ><svg class="footer__social-networks-icon">
+                    <use xlink:href="images/sprite.svg#icon_facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__schedule">
+            <p class="footer__schedule-week">
+              Mon - Fri <br />
+              08:00 am - 07:00 pm
+            </p>
+            <p class="footer__schedule-week">
+              Sat - Sun <br />
+              10:00 am - 06:00 pm
+            </p>
+          </div>
+        </div>
+
+        <ul class="footer__credits">
+          <li class="footer__credits-item">
+            <span class="footer__credits-year">2023</span>
+          </li>
+          <li class="footer__credits-item">
+            <a
+              class="footer__credits-link"
+              href="https://rs.school/js-stage0/"
+              target="_blank"
+            >
+              The Rolling Scopes School</a
+            >
+          </li>
+          <li class="footer__credits-item">
+            <a
+              id="footer__credits-github"
+              class="footer__credits-link"
+              href="https://github.com/sh9vch9nk0"
+              target="_blank"
+              >Hanna Shevchenko</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
